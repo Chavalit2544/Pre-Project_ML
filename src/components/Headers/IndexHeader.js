@@ -45,7 +45,7 @@ function IndexHeader() {
             . Coded by Chavalit 
             .
           </h6>
-          <p>Chavalit</p>
+          
         </Container>
       </div>
     </>
