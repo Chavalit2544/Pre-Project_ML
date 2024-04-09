@@ -2,7 +2,6 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -51,7 +50,7 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <img alt="" src="LogoDUNGDEE.png" width="80" height="80" className="d-inline-block align-top"/>
-            <NavbarBrand href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar" 
+            <NavbarBrand href="http://localhost:3000/index" 
             target="_blank" 
             id="navbar-brand">
               DuangDee
@@ -111,32 +110,7 @@ function IndexNavbar() {
                 
 
               <NavItem>
-                <Button
-                  className="nav-link btn-neutral"
-                  color="info"
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-navbar"
-                  id="upgrade-to-pro"
-                  target="_blank"
-                >
-                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                  <p>Upgrade to PRO</p>
-                </Button>
-                <UncontrolledTooltip target="#upgrade-to-pro">
-                  Cooming soon!
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
-                </UncontrolledTooltip>
+                
               </NavItem>
               <NavItem>
                 <NavLink

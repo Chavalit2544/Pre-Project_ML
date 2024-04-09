@@ -3,27 +3,22 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Card,
-  CardHeader,
   CardBody,
-  CardFooter,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
-  Col
+  Col,
+  Row,
+  Card,
+  CardImg,
+  CardTitle,
+  CardText,
 } from "reactstrap";
 
 // core components
-
-import TransparentFooter from "components/Footers/TransparentFooter.js";
+import DarkFooter from "components/Footers/DarkFooter";
 import IndexNavbar from "components/Navbars/IndexNavbar";
 
 function LoginPage() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+
   React.useEffect(() => {
     document.body.classList.add("login-page");
     document.body.classList.add("sidebar-collapse");
@@ -42,101 +37,40 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/down.jpg") + ")"
           }}
-        ></div>
-        <div className="content">
-          <Container>
-            <Col className="ml-auto mr-auto" md="4">
-              <Card className="card-login card-plain">
-                <Form action="" className="form" method="">
-                  <CardHeader className="text-center">
-                    <div className="logo-container">
-                      <img
-                        alt="..."
-                        src={require("assets/img/now-logo.png")}
-                      ></img>
-                    </div>
-                  </CardHeader>
-                  <CardBody>
-                    <InputGroup
-                      className={
-                        "no-border input-lg" +
-                        (firstFocus ? " input-group-focus" : "")
-                      }
-                    >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="now-ui-icons users_circle-08"></i>
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
-                        placeholder="First Name..."
-                        type="text"
-                        onFocus={() => setFirstFocus(true)}
-                        onBlur={() => setFirstFocus(false)}
-                      ></Input>
-                    </InputGroup>
-                    <InputGroup
-                      className={
-                        "no-border input-lg" +
-                        (lastFocus ? " input-group-focus" : "")
-                      }
-                    >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="now-ui-icons text_caps-small"></i>
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
-                        placeholder="Last Name..."
-                        type="text"
-                        onFocus={() => setLastFocus(true)}
-                        onBlur={() => setLastFocus(false)}
-                      ></Input>
-                    </InputGroup>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      block
-                      className="btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                      size="lg"
-                    >
-                      Get Started
-                    </Button>
-                    <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Create Account
-                        </a>
-                      </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Need Help?
-                        </a>
-                      </h6>
-                    </div>
-                  </CardFooter>
-                </Form>
+        ></div> <br />
+        <Container>
+          <h1>About Us</h1>
+          <Row>
+            <Col>
+              <img alt="" src="face.jpg" width="500" height="400" className="d-inline-block align-top" /> <br /> <br />
+              <h5>รูปภาพตัวอย่าง โหงวเฮ้งของผู้หญิง</h5>
+              <p>อ้างอิง : https://peaceclinicpty.com/lifestyle-physiognomy/</p>
+            </Col>
+            <Col>
+              โหงวเฮ้ง (Mien Shiang) คือ ศาสตร์ของการทำนายคุณสมบัติคนจากรูปลักษณ์ภายนอก (Chinese Physiognomy) โดยเฉพาะหน้าตา มีในหลายประเทศทั่วโลก นับตั้งแต่ในยุคโบราณ</Col>
+            <Col>
+              <Card style={{ width: "20rem"}}>
+                <CardImg alt="..." src="faces.png" top></CardImg>
+                <CardBody>
+                  <CardTitle tag="h5" style={{color:"black"}}>วิเคราะห์โหงวเฮ้งจากรูปทรงใบหน้า</CardTitle>
+                  <CardText tag="h6" style={{color:"black"}}>
+                  รูปหน้าพื้นฐานของคุณเป็นสิ่งที่มีประโยชน์มากที่ควรรู้ มันสามารถช่วยคุณเลือกแว่นตาหมวกและแน่นอนรูปทรงคิ้ว มีหมวดหมู่รูปร่างพื้นฐานหกประเภทที่พวกเราส่วนใหญ่ควรพอดีหรือเอนเข้าหา: วงรี กลม ยาว หัวใจ เพชร และสี่เหลี่ยม
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="https://helenajones.co.uk/do-you-know-your-face-shape/"
+                  >
+                    อ่านเพิ่มเติม
+                  </Button>
+                </CardBody>
               </Card>
             </Col>
-          </Container>
-        </div>
-        <TransparentFooter />
+          </Row>
+        </Container>
       </div>
+      <DarkFooter />
     </>
   );
 }
