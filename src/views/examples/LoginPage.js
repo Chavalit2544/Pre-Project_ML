@@ -48,8 +48,23 @@ function LoginPage() {
               <h5>รูปภาพตัวอย่าง โหงวเฮ้งของผู้หญิง</h5>
               <p>อ้างอิง : https://peaceclinicpty.com/lifestyle-physiognomy/</p>
             </Col>
-            <Col>
-              โหงวเฮ้ง (Mien Shiang) คือ ศาสตร์ของการทำนายคุณสมบัติคนจากรูปลักษณ์ภายนอก (Chinese Physiognomy) โดยเฉพาะหน้าตา มีในหลายประเทศทั่วโลก นับตั้งแต่ในยุคโบราณ</Col>
+            
+            <Card style={{ width: "20rem"}}>
+                <CardImg alt="..." src="faces.png" top></CardImg>
+                <CardBody>
+                  <CardTitle tag="h5" style={{color:"black"}}>รูปหน้า" บอก "นิสัย" พร้อมเคล็ดลับความงามสำหรับสาวทุกรูปหน้า</CardTitle>
+                  <CardText tag="h6" style={{color:"black"}}>
+                  โบราณว่า "รู้หน้าไม่รู้ใจ" แต่รู้หรือไม่ว่า "ใบหน้า" สามารถบ่งบอกนิสัยของเราได้ ชาวจีนได้ศึกษาเรื่องนี้มากว่า 3,000 ปี หรือที่เรียกว่า "ศาสตร์โหงวเฮ้ง" นั่นเอง
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="https://www.thairath.co.th/lifestyle/woman/1780295"
+                  >
+                    อ่านเพิ่มเติม
+                  </Button>
+                </CardBody>
+              </Card>
+
             <Col>
               <Card style={{ width: "20rem"}}>
                 <CardImg alt="..." src="faces.png" top></CardImg>
