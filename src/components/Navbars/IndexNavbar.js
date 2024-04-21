@@ -49,11 +49,12 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="purple">
         <Container>
           <div className="navbar-translate">
-            <img alt="" src="LogoDUNGDEE.png" width="80" height="80" className="d-inline-block align-top"/>
-            <NavbarBrand href="http://localhost:3000/index" 
+            <img alt="" src="LogoDUNGDEE.png" width="100" height="100" className="d-inline-block align-top"/>
+            <NavbarBrand href=
+            "http://localhost:3000/index" 
             target="_blank" 
             id="navbar-brand">
-              DuangDee
+              <span style={{ fontSize: "14px", lineHeight: "80px" }}>Dungdee</span>
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Back to home
