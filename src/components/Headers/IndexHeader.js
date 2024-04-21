@@ -62,9 +62,9 @@ function IndexHeader() {
   const [bgImageIndex, setBgImageIndex] = React.useState(0);
 
   const images = useMemo(() => [
-    require("assets/img/down.jpg"),
+    require("assets/img/down1.jpg"),
     require("assets/img/down2.jpg"),
-    require("assets/img/down3.jpg"),
+    require("assets/img/down4.jpg"),
     // เพิ่ม URL ของภาพพื้นหลังเพิ่มเติมตามต้องการ
   ], []);
 
@@ -75,7 +75,7 @@ function IndexHeader() {
       setBgImageIndex(newIndex);
     };
 
-    const interval = setInterval(updateBgImage, 3000); // เปลี่ยนภาพพื้นหลังทุก 5 วินาที (5000 มิลลิวินาที)
+    const interval = setInterval(updateBgImage, 5000); // เปลี่ยนภาพพื้นหลังทุก 5 วินาที (5000 มิลลิวินาที)
 
     return () => clearInterval(interval);
   }, [bgImageIndex, images, pageHeader]);
