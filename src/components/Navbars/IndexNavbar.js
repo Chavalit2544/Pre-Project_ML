@@ -54,7 +54,7 @@ function IndexNavbar() {
             "http://localhost:3000/index" 
             target="_blank" 
             id="navbar-brand">
-              <span style={{ fontSize: "14px", lineHeight: "80px" }}>Dungdee</span>
+              <span style={{ fontSize: "14px", lineHeight: "80px" }}>Duangdee</span>
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Back to home
