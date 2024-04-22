@@ -43,7 +43,7 @@ function LoginPage() {
         ></div> <br />  
         <Container>
           <h1>About Us</h1>
-          <CSSTransition in={true} appear={true} timeout={1000} classNames="fade-up">
+          <CSSTransition in={true} appear={true} timeout={2000} classNames="fade-up">
             <Row>
               <Col>
                 <Card style={{ width: "20rem" , height: "30rem" }}>
