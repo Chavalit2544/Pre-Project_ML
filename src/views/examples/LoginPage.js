@@ -39,23 +39,35 @@ function LoginPage() {
           style={{
             backgroundImage: "url(" + require("assets/img/down.jpg") + ")"
           }}
-        ></div> <br />
+        ></div> <br />  
         <Container>
           <h1>About Us</h1>
           <Row>
             <Col>
-              <img alt="" src="face.jpg" width="500" height="400" className="d-inline-block align-top" /> <br /> <br />
-              <h5>รูปภาพตัวอย่าง โหงวเฮ้งของผู้หญิง</h5>
-              <p>อ้างอิง : https://peaceclinicpty.com/lifestyle-physiognomy/</p>
+              <Card style={{ width: "20rem" , height: "30rem"}}>
+                <CardImg alt="..." src="face.jpg" top style={{ height: "200px", objectFit: "cover"}}></CardImg>
+                <CardBody>
+                  <CardText tag="h6" style={{color:"black"}}>
+                      โหงวเฮ้งเป็นศาสตร์จีนโบราณที่ใช้ในการพิจารณาดูใบหน้า เพื่อวิเคราะห์ถึงบุคลิกและลักษณะนิสัยของแต่ละคน โดยการอ่านจากลักษณะใบหน้าและอริยาบถต่างๆทั้งการพูด น้ำเสียง ไปจนถึงการดูราศี
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="https://peaceclinicpty.com/lifestyle-physiognomy/"
+                  >
+                    อ่านเพิ่มเติม
+                  </Button>
+                </CardBody>
+              </Card>
             </Col>
             
-            <Card style={{ width: "20rem"}}>
-                <CardImg alt="..." src="faces.png" top></CardImg>
+            <Col>
+              <Card style={{ width: "20rem" , height: "30rem"}}>
+                <CardImg alt="..." src="thairat.jpg" top style={{ height: "200px", objectFit: "cover"}}></CardImg>
                 <CardBody>
                   <CardTitle tag="h5" style={{color:"black"}}>รูปหน้า" บอก "นิสัย" พร้อมเคล็ดลับความงามสำหรับสาวทุกรูปหน้า</CardTitle>
-                  <CardText tag="h6" style={{color:"black"}}>
-                  โบราณว่า "รู้หน้าไม่รู้ใจ" แต่รู้หรือไม่ว่า "ใบหน้า" สามารถบ่งบอกนิสัยของเราได้ ชาวจีนได้ศึกษาเรื่องนี้มากว่า 3,000 ปี หรือที่เรียกว่า "ศาสตร์โหงวเฮ้ง" นั่นเอง
-                  </CardText>
+                    <CardText tag="h6" style={{color:"black"}}>
+                      โบราณว่า "รู้หน้าไม่รู้ใจ" แต่รู้หรือไม่ว่า "ใบหน้า" สามารถบ่งบอกนิสัยของเราได้ ชาวจีนได้ศึกษาเรื่องนี้มากว่า 3,000 ปี หรือที่เรียกว่า "ศาสตร์โหงวเฮ้ง" นั่นเอง
+                    </CardText>
                   <Button
                     color="primary"
                     href="https://www.thairath.co.th/lifestyle/woman/1780295"
@@ -64,14 +76,15 @@ function LoginPage() {
                   </Button>
                 </CardBody>
               </Card>
+            </Col>
 
             <Col>
-              <Card style={{ width: "20rem"}}>
-                <CardImg alt="..." src="faces.png" top></CardImg>
+              <Card style={{ width: "20 rem" , height: "30rem"}}>
+                <CardImg alt="..." src="faces.png" top style={{ height: "200px", objectFit: "cover"}}></CardImg>
                 <CardBody>
                   <CardTitle tag="h5" style={{color:"black"}}>วิเคราะห์โหงวเฮ้งจากรูปทรงใบหน้า</CardTitle>
                   <CardText tag="h6" style={{color:"black"}}>
-                  รูปหน้าพื้นฐานของคุณเป็นสิ่งที่มีประโยชน์มากที่ควรรู้ มันสามารถช่วยคุณเลือกแว่นตาหมวกและแน่นอนรูปทรงคิ้ว มีหมวดหมู่รูปร่างพื้นฐานหกประเภทที่พวกเราส่วนใหญ่ควรพอดีหรือเอนเข้าหา: วงรี กลม ยาว หัวใจ เพชร และสี่เหลี่ยม
+                    รูปหน้าพื้นฐานของคุณเป็นสิ่งที่มีประโยชน์มากที่ควรรู้ มันสามารถช่วยคุณเลือกแว่นตาหมวกและแน่นอนรูปทรงคิ้ว มีหมวดหมู่รูปร่างพื้นฐานหกประเภทที่พวกเราส่วนใหญ่ควรพอดีหรือเอนเข้าหา: วงรี กลม ยาว หัวใจ เพชร และสี่เหลี่ยม
                   </CardText>
                   <Button
                     color="primary"

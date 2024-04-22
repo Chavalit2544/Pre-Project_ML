@@ -75,7 +75,7 @@ function IndexHeader() {
       setBgImageIndex(newIndex);
     };
 
-    const interval = setInterval(updateBgImage, 5000); // เปลี่ยนภาพพื้นหลังทุก 5 วินาที
+    const interval = setInterval(updateBgImage, 3000); // เปลี่ยนภาพพื้นหลังทุก 5 วินาที
 
     return () => clearInterval(interval);
   }, [bgImageIndex, images, pageHeader]);
