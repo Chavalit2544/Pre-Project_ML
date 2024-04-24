@@ -11,7 +11,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
 
-import ImageUpload from "../components/ImageUpload.js";
+// import ImageUpload from "../components/ImageUpload.js";
 
 function Index() {
   React.useEffect(() => {
@@ -31,7 +31,7 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <ImageUpload/>
+          {/* <ImageUpload/> */}
           {/* <BasicElements /> */}
           {/* <Navbars />
           <Tabs />
